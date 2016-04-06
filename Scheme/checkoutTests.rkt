@@ -3,7 +3,7 @@
 (require rackunit
          "checkout.rkt")
 
-(check-equal? (calculate-total '("Apple")) 
+(check-equal? (calculate-total "Apple") 
               10 
               "Single apple gives total")
 
@@ -12,7 +12,8 @@
 ; 2. Hard-code banana implementation
 ; 3. Refactor banana implementation
 ;     - hash of prices
-;     - add lookup-price alias
+;     - move prices
+
 
 "**********************"
 "*** Tests Complete ***"
